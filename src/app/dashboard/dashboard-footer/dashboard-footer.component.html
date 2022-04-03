@@ -1,0 +1,17 @@
+<p>dashboard-footer works!</p>
+<div>iterationName: {{ dataService.data.iterationName }}</div>
+<div>name: {{ dataService.data.name }}</div>
+<div *ngIf="dataService.data.obj">name: {{ dataService.data.obj.age }}</div>
+<div>name: {{ dataService.data.sendData.c }}</div>
+
+
+<br>
+
+<div>--------------------------------</div>
+
+<div [class]="getClass(colorStyle, blodStyle)">
+    类名
+</div>
+<div (click)="changeClass()" style="cursor: pointer;">
+    changeClass
+</div>
